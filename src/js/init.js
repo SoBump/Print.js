@@ -55,7 +55,7 @@ export default {
     // Process parameters
     switch (typeof args) {
       case 'string':
-        params.printable = encodeURI(args)
+        params.printable = args
         params.fallbackPrintable = params.printable
         params.type = arguments[1] || params.type
         break
